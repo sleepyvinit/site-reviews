@@ -2,7 +2,7 @@
 
 return [
 	'rating' => [
-		'label' => __( 'Rate Your Expirence', 'site-reviews' ),
+		'label' => __( 'Rate Your Experience', 'site-reviews' ),
 		'type' => 'rating',
 	],
 	'FirstName' => [
