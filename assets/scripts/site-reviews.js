@@ -554,10 +554,6 @@
                 }.bind(this))
             },
             Et: function(t) {
-                console.log('ETT ------ ')
-                console.log(t) ;
-                console.log('ETT ------ ')
-                
                 var i = {},
                     s = [];
                 return this.Lt(t.attributes, s, i), this.xt(s), this.Rt(t), t.validation = {
@@ -568,24 +564,19 @@
                 }
             },
             lt: function(t, i) {
-                console.log(t) ;
                 var s = this.Gt(t),
                     n = "add" === i;
                 t.input.classList[i](this.config.input_error_class), t.input.classList[n ? "remove" : "add"](this.config.input_valid_class), s[0] && s[0].classList[i](this.config.field_error_class), s[1] && (s[1].innerHTML = n ? t.errors.join("<br>") : "", s[1].style.display = n ? "" : "none")
             },
             dt: function(t, i) {
-                console.log(t) ;
-                debugger;
                 t.validation || this.Et(t), t.validation.errors = i
             },
             xt: function(t) {
-                console.log(t) ;
                 t.sort(function(t, i) {
                     return (i.priority || 1) - (t.priority || 1)
                 })
             },
             ut: function(t) {
-                console.log(t) ;
                 var i = !0,
                     s = this.fields;
                 for (var n in t instanceof HTMLElement && (s = [t.validation]), s)
