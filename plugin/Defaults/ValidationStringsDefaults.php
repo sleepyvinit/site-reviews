@@ -15,7 +15,7 @@ class ValidationStringsDefaults extends Defaults
             'accepted' => __('This field must be accepted.', 'site-reviews'),
             'between' => __('This field value must be between %s and %s.', 'site-reviews'),
             'betweenlength' => __('This field must have between %s and %s characters.', 'site-reviews'),
-            'email' => __('This field requires a valid e-mail address.', 'site-reviews'),
+            'email' => __('Enter valid e-mail address.', 'site-reviews'),
             'errors' => __('Please fix the submission errors.', 'site-reviews'),
             'max' => __('Maximum value for this field is %s.', 'site-reviews'),
             'maxlength' => __('This field allows a maximum of %s characters.', 'site-reviews'),
