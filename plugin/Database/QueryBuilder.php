@@ -178,7 +178,7 @@ class QueryBuilder
         if (is_numeric($value)
             && in_array(intval($value), range(1, glsr()->constant('MAX_RATING', Rating::class)))) {
             return [
-                'compare' => '>=',
+                'compare' => '=',
                 'key' => '_rating',
                 'value' => $value,
             ];
